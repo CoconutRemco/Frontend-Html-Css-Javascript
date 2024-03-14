@@ -117,3 +117,8 @@ footer {
 #game-image, #system-requirements, #reviews {
     margin-top: 20px;
 }
+
+#games-container {
+    overflow: auto;
+    max-height: 500px; /* Pas deze waarde aan naar de gewenste maximale hoogte */
+}

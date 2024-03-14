@@ -29,9 +29,20 @@
             <p>Choose a game from the menu to learn more about it.</p>
             <button id="view-cart">Bekijk winkelmandje</button>
             <button id="view-games">Bekijk spellen</button>
+            <input type="number" id="price-filter" placeholder="Prijs lager dan">
+            <select id="genre-filter">
+                <option value="">Selecteer een genre</option>
+                <option value="Action-Adventure">Action-Adventure</option>
+                <option value="Survival">Survival</option>
+                <option value="First-Person Shooter">First-Person Shooter</option>
+            </select>
+            <input type="number" id="rating-filter" placeholder="Rating lager dan">
+            <button onclick="filterGames()">Filter</button>
         </section>
         <div id="games-container"></div>
         <div id="cart-container" style="display: none;"></div>
+        <button id="calculate-price" onclick="calculatePrice()" style="display: none;">Bereken prijs</button>
+        <p id="total-price" style="display: none;"></p>
     </main>
     <footer>
         <p>© 2023 Game Catalogue</p>
